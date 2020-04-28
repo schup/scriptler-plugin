@@ -99,7 +99,7 @@
 			<plugin>
 				<groupId>org.jenkins-ci.tools</groupId>
 				<artifactId>maven-hpi-plugin</artifactId>
-				<version>1.90</version>
+				<version>3.14</version>
 				<extensions>true</extensions>
 			</plugin>
 			<plugin>

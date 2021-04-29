@@ -1,0 +1,25 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.jenkins-ci.plugins:plugin
+    versions:
+    - "4.15"
+    - "4.16"
+    - "4.17"
+  - dependency-name: org.jenkins-ci.modules:sshd
+    versions:
+    - "2.7"
+    - "3.0"
+    - 3.0.1
+  - dependency-name: org.jenkins-ci.plugins:token-macro
+    versions:
+    - "2.14"
+  - dependency-name: com.cloudbees:maven-license-plugin
+    versions:
+    - "1.8"
